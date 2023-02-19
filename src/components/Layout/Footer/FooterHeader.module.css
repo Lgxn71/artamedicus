@@ -1,0 +1,18 @@
+.footerContactsContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.footerContactsSingleContainer {
+  max-width: 35rem;
+}
+.button {
+  margin-top: 3.75rem;
+}
+.contactDetail {
+  display: flex;
+  justify-content: space-between;
+  gap: 4.375rem;
+}
+.contactDetail div {
+  display: flex;
+}

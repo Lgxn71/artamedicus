@@ -1,0 +1,47 @@
+.footerBackground {
+  background-color: var(--color-black-900);
+  color: var(--color-white-100);
+}
+.footerBottomBackground {
+  padding-top: 3.75rem;
+  padding-bottom: 4.625rem;
+  display: flex;
+  max-width: 1110px;
+  margin: auto;
+  justify-content: space-evenly;
+}
+.footerMainContainer {
+  max-width: 400px;
+}
+.footerMainContainer p {
+  letter-spacing: 0.01em;
+  line-height: 30px;
+}
+.footerUnorderList {
+  display: flex;
+  gap: 4rem;
+}
+.footerBackground a {
+  color: var(--color-white-100);
+}
+
+.border {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+.Policy {
+  max-width: 1110px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.iconContainer {
+  display: flex;
+}
+.icon {
+  background-color: var(--color-white-100);
+  width: 24px;
+  margin-left: 12px;
+  height: 24px;
+}

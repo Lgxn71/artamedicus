@@ -1,11 +1,11 @@
-import FooterContacts from "./FooterContacts";
-import FooterLinks from "./FooterLinks";
+import FooterHeader from "./FooterHeader";
+import FooterBottom from "./FooterBottom";
 
 const Footer = () => {
   return (
     <section>
-      <FooterContacts />
-      <FooterLinks />
+      <FooterHeader />
+      <FooterBottom />
     </section>
   );
 };
