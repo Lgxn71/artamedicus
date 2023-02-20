@@ -4,6 +4,7 @@
   --color-white-100: #ffffff;
   --color-blue-100: #0047ff;
   --color-gray-300: #787e8c;
+  --color-gray-200: #5b616e1a;
 }
 
 body {
@@ -13,6 +14,7 @@ body {
 ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 a {
   text-decoration: none;
@@ -25,14 +27,6 @@ h2 {
   font-weight: 700;
   margin: 0.625rem 0;
 }
-.textGray {
+.text-gray {
   color: var(--color-gray-300);
-}
-.btnFull {
-  background-color: var(--color-blue-100);
-  color: var(--color-white-100) !important;
-  padding: 0.813rem 0.938rem;
-  font-weight: 500;
-  opacity: 1 !important;
-  box-sizing: border-box;
 }

@@ -1,10 +1,10 @@
-import FooterHeader from "./FooterHeader";
+import CTA from "./CTA";
 import FooterBottom from "./FooterBottom";
 
 const Footer = () => {
   return (
     <section>
-      <FooterHeader />
+      <CTA />
       <FooterBottom />
     </section>
   );

@@ -1,3 +1,6 @@
+.border-bottom {
+  border-bottom: 1px solid var(--color-gray-200);
+}
 .header {
   max-width: 1110px;
   width: 100%;
@@ -13,21 +16,22 @@
   font-size: 1.5rem;
   font-weight: 800;
 }
-.navLinks {
+.nav-links {
   display: flex;
+  align-items: center;
 }
-.navLinks li {
-  margin: 1rem;
+.nav-links li {
+  margin: 0 1rem;
 }
-.navLinks .link {
+.nav-links .link {
   opacity: 0.4;
   transition: opacity 0.3s ease;
 }
-.navLinks .link:hover,
-.navLinks .link:active {
+.nav-links .link:hover,
+.nav-links .link:active {
   opacity: 1;
 }
-.navLinks li a {
+.nav-links li a {
   font-size: 0.875rem;
   color: var(--color-black-900);
 }

@@ -1,37 +1,35 @@
-import Link from "next/link";
-import Container from "@/components/UI/Container";
-import styles from "./FooterHeader.module.css";
+import Container from "@/components/UI/Container/Container";
+import styles from "./CTA.module.css";
+import ButtonPrimary from "@/components/UI/ButtonPrimary";
 
-const FooterHeader= () => {
+const CTA = () => {
   return (
     <Container>
-      <div className={styles.footerContactsContainer}>
-        <div className={styles.footerContactsSingleContainer}>
+      <div className={styles["cta-container"]}>
+        <div className={styles["cta-single-container"]}>
           <h2>Остались вопросы? Закажите Звонок!</h2>
           <p>Перезвоним, проконсультируем, и запишем Вас на прием!</p>
-          <div className={styles.button}>
-            <Link href="" className="btnFull">
-              Заказать Звонок
-            </Link>
+          <div className={styles["cta-button-container "]}>
+            <ButtonPrimary>Заказать звонок</ButtonPrimary>
           </div>
         </div>
-        <div className={styles.footerContactsSingleContainer}>
+        <div className={styles["cta-single-container"]}>
           <h2>Свяжитесь с нами</h2>
           <p>Наша клиника работает с 8:00 до 20:00 без выходных.</p>
-          <div className={styles.contactDetail}>
+          <div className={styles["contact-details"]}>
             <div>
               <ul>
                 <li>
                   <p>Телефон</p>
-                  <p className="textGray">+7172 66 44 55</p>
+                  <p className="text-gray">+7172 66 44 55</p>
                 </li>
                 <li>
                   <p>Email</p>
-                  <p className="textGray">altamedicus@gmail.com</p>
+                  <p className="text-gray">altamedicus@gmail.com</p>
                 </li>
                 <li>
                   <p>Адрес</p>
-                  <p className="textGray">Мангилик - ель 21 / 1, 3 этаж</p>
+                  <p className="text-gray">Мангилик - ель 21 / 1, 3 этаж</p>
                 </li>
               </ul>
             </div>
@@ -39,15 +37,15 @@ const FooterHeader= () => {
               <ul>
                 <li>
                   <p>Сот. номер</p>
-                  <p className="textGray">+7172 66 44 55</p>
+                  <p className="text-gray">+7172 66 44 55</p>
                 </li>
                 <li>
                   <p>Соц. сети</p>
-                  <p className="textGray">+7172 66 44 55</p>
+                  <p className="text-gray">+7172 66 44 55</p>
                 </li>
                 <li>
                   <p>Время работы</p>
-                  <p className="textGray">с 08:00 до 20:00, без выходных</p>
+                  <p className="text-gray">с 08:00 до 20:00, без выходных</p>
                 </li>
               </ul>
             </div>
@@ -57,4 +55,4 @@ const FooterHeader= () => {
     </Container>
   );
 };
-export default FooterHeader;
+export default CTA;
