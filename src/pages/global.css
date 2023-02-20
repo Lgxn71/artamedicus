@@ -2,6 +2,7 @@
 * {
   --color-black-900: #000000;
   --color-white-100: #ffffff;
+  --color-white-150: #f9fafb;
   --color-blue-100: #0047ff;
   --color-gray-300: #787e8c;
   --color-gray-200: #5b616e1a;
@@ -21,11 +22,26 @@ a {
 }
 p {
   font-size: 0.875rem;
+  margin: 10px 0;
+  line-height: 30px;
+  letter-spacing: -0.01em;
 }
 h2 {
   font-size: 2.5rem;
   font-weight: 700;
   margin: 0.625rem 0;
+}
+h1 {
+  font-size: 4.375rem;
+  font-weight: 800;
+  margin: 0;
+}
+.highlight {
+  color: var(--color-black-900);
+  text-decoration: underline;
+}
+.button-container {
+  margin-top: 2rem;
 }
 .text-gray {
   color: var(--color-gray-300);

@@ -1,3 +1,4 @@
+
 .btn-blue {
   background-color: var(--color-blue-100);
   color: var(--color-white-100) !important;
@@ -6,6 +7,8 @@
   opacity: 1 !important;
   box-sizing: border-box;
   border: 1px solid var(--color-blue-100);
+  font-family: inherit;
+  font-size: 1rem;
 }
 .btn-blue:hover,
 .btn-blue:active {

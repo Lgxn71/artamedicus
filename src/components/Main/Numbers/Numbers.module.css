@@ -1,0 +1,24 @@
+.numbers-background-color {
+  background-color: var(--color-black-900);
+  color: var(--color-white-100);
+}
+.numbers-container {
+  max-width: 510px;
+}
+.achievments {
+  display: flex;
+  justify-content: space-between;
+}
+.achievment {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.numbers {
+  padding-right:1rem;
+  font-size: 40px;
+  font-weight: 600;
+}
+.text {
+  display: block;
+}

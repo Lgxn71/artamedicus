@@ -1,3 +1,6 @@
+.cta-background-color {
+  background-color: var(--color-white-150);
+}
 .cta-container {
   display: flex;
   justify-content: space-between;
@@ -5,9 +8,7 @@
 .cta-single-container {
   max-width: 35rem;
 }
-.cta-button-container {
-  margin-top: 3.75rem;
-}
+
 .contact-details {
   display: flex;
   justify-content: space-between;

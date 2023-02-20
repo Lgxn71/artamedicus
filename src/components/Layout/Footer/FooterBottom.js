@@ -4,10 +4,10 @@ import styles from "./FooterBottom.module.css";
 
 const FooterBottom = () => {
   return (
-    <footer className={styles.footerBackground}>
+    <footer className={styles["footer-colors"]}>
       <ContainerFooter>
-        <div className={styles.footerBottomBackground}>
-          <div className={styles.footerMainContainer}>
+        <div className={styles["footer-container"]}>
+          <div className={styles["footer-main-container"]}>
             <h3>Arta Medicus</h3>
             <p>
               Мы улучшаем качество жизни людей, сохраняем молодость, красоту и
@@ -15,7 +15,7 @@ const FooterBottom = () => {
               профессионализм.
             </p>
           </div>
-          <ul className={styles.footerUnorderList}>
+          <ul className={styles["footer-list"]}>
             <li>
               <Link href="">О нас</Link>
             </li>
@@ -36,17 +36,19 @@ const FooterBottom = () => {
             </li>
           </ul>
         </div>
-      </ContainerFooter>{" "}
+      </ContainerFooter>
       <div className={styles.border}>
-        <div className={styles.Policy}>
-          <p>(c) ArtaMedicus 2022 ВСЕ ПРАВА ЗАЩИЩЕНЫ.</p>
-          <div className={styles.iconContainer}>
-            <div className={styles.icon}></div>
-            <div className={styles.icon}></div>
-            <div className={styles.icon}></div>
-            <div className={styles.icon}></div>
+        <ContainerFooter>
+          <div className={styles.policy}>
+            <p>(c) ArtaMedicus 2022 ВСЕ ПРАВА ЗАЩИЩЕНЫ.</p>
+            <div className={styles["icon-container"]}>
+              <div className={styles.icon}></div>
+              <div className={styles.icon}></div>
+              <div className={styles.icon}></div>
+              <div className={styles.icon}></div>
+            </div>
           </div>
-        </div>
+        </ContainerFooter>
       </div>
     </footer>
   );

@@ -1,0 +1,12 @@
+.eyebrow-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.eyebrow {
+  text-transform: uppercase;
+}
+
+.read-more {
+  color: var(--color-blue-100);
+}

@@ -1,13 +1,10 @@
 // artamedicus.com/
 import Layout from "../components/Layout/Layout";
-import { Inter } from "@next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
-
+import Main from "../components/Main/Main";
 export default function Home() {
   return (
-    <>
-      <Layout />
-    </>
+    <Layout>
+      <Main></Main>
+    </Layout>
   );
 }
