@@ -1,6 +1,4 @@
-.cta-background-color {
-  background-color: var(--color-white-150);
-}
+
 .cta-container {
   display: flex;
   justify-content: space-between;

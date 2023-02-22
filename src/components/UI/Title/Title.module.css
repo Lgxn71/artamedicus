@@ -1,6 +1,9 @@
 .title-container {
   max-width: 700px;
+  line-height: 55px;
+  margin-top: 5px;
 }
 .paragraph {
   max-width: 470px;
+  line-height: 30px;
 }

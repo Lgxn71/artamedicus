@@ -4,7 +4,7 @@ import ButtonPrimary from "@/components/UI/ButtonPrimary";
 
 const CTA = () => {
   return (
-    <div className={styles['cta-background-color']}>
+    <div className="background-color-dark-white">
       <Container>
         <div className={styles["cta-container"]}>
           <div className={styles["cta-single-container"]}>

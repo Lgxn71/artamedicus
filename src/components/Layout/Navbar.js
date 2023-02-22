@@ -33,7 +33,7 @@ const Navbar = () => {
                 </Link>
               </li>
               <li>
-                <ButtonPrimary>Заказать звонок</ButtonPrimary>
+                <ButtonPrimary inNavBar={true}>Заказать звонок</ButtonPrimary>
               </li>
             </ul>
           </div>

@@ -5,7 +5,8 @@
   --color-white-150: #f9fafb;
   --color-blue-100: #0047ff;
   --color-gray-300: #787e8c;
-  --color-gray-200: #5b616e1a;
+  --color-gray-250: #b2b5bd;
+  --color-gray-400: #5b616e1a;
 }
 
 body {
@@ -19,6 +20,7 @@ ul {
 }
 a {
   text-decoration: none;
+  line-height: 17px;
 }
 p {
   font-size: 0.875rem;
@@ -45,4 +47,14 @@ h1 {
 }
 .text-gray {
   color: var(--color-gray-300);
+}
+
+/* colors background */
+.background-color-dark-white {
+  background-color: var(--color-white-150);
+  border-color: #efeff0;
+}
+.background-color-black {
+  background-color: var(--color-black-900);
+  color: var(--color-white-100);
 }

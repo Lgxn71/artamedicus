@@ -4,7 +4,7 @@ import styles from "./FooterBottom.module.css";
 
 const FooterBottom = () => {
   return (
-    <footer className={styles["footer-colors"]}>
+    <footer className="background-color-black">
       <ContainerFooter>
         <div className={styles["footer-container"]}>
           <div className={styles["footer-main-container"]}>

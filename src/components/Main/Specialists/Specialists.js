@@ -2,7 +2,7 @@ import Container from "@/components/UI/Container/Container";
 import Eyebrow from "@/components/UI/Eyebrow/Eyebrow";
 import PersonCard from "@/components/UI/PersonCard/PersonCard";
 import Title from "@/components/UI/Title/Title";
-import style from "./Specialists.module.css";
+import styles from "./Specialists.module.css";
 const Specialists = () => {
   const DUMMY_DATA = [
     {
@@ -42,7 +42,7 @@ const Specialists = () => {
         titleText={`Наши эксперты в области медицины помогут вам!`}
         paragraph={`Врачи Arta Medicus Clinic — эксперты в своих областях медицины и владеют всеми передовыми методиками. `}
       ></Title>
-      <div className={style["specialists-container"]}>
+      <div className={styles["specialists-container"]}>
         {DUMMY_DATA.map((person) => {
           return (
             <PersonCard

@@ -5,8 +5,12 @@
 }
 .eyebrow {
   text-transform: uppercase;
+  font-weight: 700;
+  line-height: 17px;
+  margin: 0;
 }
 
 .read-more {
   color: var(--color-blue-100);
+  line-height: 17px;
 }
