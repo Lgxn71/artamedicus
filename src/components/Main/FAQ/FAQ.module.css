@@ -1,0 +1,10 @@
+.faq-container {
+  border-top: 1px solid #5b616e1a;
+  margin-top: 100px;
+}
+.faq-content {
+  display: flex;
+  margin-top: 40px;
+  justify-content: space-between;
+  align-items: top;
+}

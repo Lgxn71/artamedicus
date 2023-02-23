@@ -1,3 +1,6 @@
+.border-right {
+  border-right: 1px solid rgba(91, 97, 110, 0.08);
+}
 
 .cta-container {
   display: flex;

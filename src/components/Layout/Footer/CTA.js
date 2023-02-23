@@ -1,13 +1,15 @@
 import Container from "@/components/UI/Container/Container";
 import styles from "./CTA.module.css";
-import ButtonPrimary from "@/components/UI/ButtonPrimary";
+import ButtonPrimary from "@/components/UI/Buttons/ButtonPrimary";
 
 const CTA = () => {
   return (
     <div className="background-color-dark-white">
       <Container>
         <div className={styles["cta-container"]}>
-          <div className={styles["cta-single-container"]}>
+          <div
+            className={`${styles["border-right"]} ${styles["cta-single-container"]}`}
+          >
             <h2>Остались вопросы? Закажите Звонок!</h2>
             <p>Перезвоним, проконсультируем, и запишем Вас на прием!</p>
             <div className="button-container">

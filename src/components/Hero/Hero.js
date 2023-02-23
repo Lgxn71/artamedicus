@@ -1,4 +1,4 @@
-import ButtonPrimary from "@/components/UI/ButtonPrimary";
+import ButtonPrimary from "@/components/UI/Buttons/ButtonPrimary";
 import Container from "@/components/UI/Container/Container";
 import ImageComp from "@/components/UI/ImageComp/ImageComp";
 import styles from "./Hero.module.css";

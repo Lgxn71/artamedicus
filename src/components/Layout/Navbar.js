@@ -1,5 +1,5 @@
 import Link from "next/link";
-import ButtonPrimary from "../UI/ButtonPrimary";
+import ButtonPrimary from "../UI/Buttons/ButtonPrimary";
 import ContainerHeader from "../UI/Container/ContainerHeader";
 import styles from "./Navbar.module.css";
 const Navbar = () => {

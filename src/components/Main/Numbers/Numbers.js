@@ -1,4 +1,8 @@
 import Container from "@/components/UI/Container/Container";
+
+import Number from "./Number";
+import NumbersData from "@/DataForComponents/main/Numbers/NumbersData.json";
+
 import styles from "./Numbers.module.css";
 const Numbers = () => {
   return (
@@ -11,34 +15,16 @@ const Numbers = () => {
           </p>
         </div>
         <ul className={styles.achievments}>
-          <li className={styles.achievment}>
-            <p className={styles.numbers}>3,000</p>
-            <p className={styles["text-container"]}>
-              Благодарных
-              <span className={styles.text}>пациентов</span>
-            </p>
-          </li>
-          <li className={styles.achievment}>
-            <p className={styles.numbers}>70</p>
-            <p className={styles["text-container"]}>
-              Научных
-              <span className={styles.text}>Статей</span>
-            </p>
-          </li>
-          <li className={styles.achievment}>
-            <p className={styles.numbers}>2,000</p>
-            <p className={styles["text-container"]}>
-              Операций
-              <span className={styles.text}>в год</span>
-            </p>
-          </li>
-          <li className={styles.achievment}>
-            <p className={styles.numbers}>100</p>
-            <p className={styles["text-container"]}>
-              Дипломов
-              <span className={styles.text}> и наград</span>
-            </p>
-          </li>
+          {NumbersData.map((number) => {
+            return (
+              <Number
+                key={number.id}
+                number={number.number}
+                text={number.text}
+                textLineBreak={number.textLineBreak}
+              />
+            );
+          })}
         </ul>
       </Container>
     </div>

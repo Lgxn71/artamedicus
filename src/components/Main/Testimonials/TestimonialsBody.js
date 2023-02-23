@@ -1,7 +1,9 @@
 import { useState } from "react";
+
 import TestimonialsReviewer from "./TestimonialsReviewer";
+
 import TestimonialsText from "./TestimonialsText";
-import TestimonialsDataBody from "@/dataForComponents/main/TestimonialsDataBody.json";
+import TestimonialsDataBody from "@/DataForComponents/main/Testimonials/TestimonialsDataBody.json";
 
 import styles from "./TestimonialsBody.module.css";
 
@@ -23,11 +25,13 @@ const TestimonialsBody = () => {
           />
         ))}
       </ul>
+
       <ul>
         {TestimonialsDataBody.map((review) => {
           if (activeReview !== review.comment.id) {
             return;
           }
+
           return (
             <TestimonialsText
               id={review.comment.id}

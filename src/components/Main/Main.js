@@ -1,8 +1,8 @@
-import Hero from "../UI/Hero/Hero";
+import Hero from "../Hero/Hero";
 import Numbers from "./Numbers/Numbers";
 import Specialists from "./Specialists/Specialists";
 import Testimonials from "./Testimonials/Testimonials";
-import QA from "./FAQ/FAQ";
+import FAQ from "./FAQ/FAQ";
 
 const Main = () => {
   return (
@@ -18,7 +18,7 @@ const Main = () => {
       <Numbers></Numbers>
       <Specialists></Specialists>
       <Testimonials></Testimonials>
-      <QA></QA>
+      <FAQ></FAQ>
     </main>
   );
 };

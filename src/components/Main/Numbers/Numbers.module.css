@@ -5,19 +5,3 @@
   display: flex;
   justify-content: space-between;
 }
-.achievment {
-  display: flex;
-  align-items: center;
-  text-align: left;
-}
-.numbers {
-  padding-right: 1rem;
-  font-size: 40px;
-  font-weight: 600;
-}
-.text-container {
-  line-height: 24px;
-}
-.text {
-  display: block;
-}
