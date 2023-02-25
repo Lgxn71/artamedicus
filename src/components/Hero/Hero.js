@@ -14,18 +14,35 @@ const Hero = (props) => {
     <div>
       <div className={styles["hero-container"]}>
         <Container>
-          <div className={styles["hero-content-container"]}>
-            <h1 className="welcome-text text-gray">
+          <div>
+            <h1
+              className={`text-gray 
+              ${props.titleWidth === "main" ? styles["hero-title-main"] : ""}
+              ${
+                props.titleWidth === "aboutCompany"
+                  ? styles["hero-title-aboutCompany"]
+                  : ""
+              }`}
+            >
               {props.textBeforeHighlight}
               <span className="highlight"> {props.highlighted}</span>
               {props.textAfterHighlight}
             </h1>
-            <p className="text-gray">{props.greyishText}</p>
+            <p
+              className={`text-gray
+              ${
+                props.paragraphWidth === "wide"
+                  ? styles["hero-paragraph-wide"]
+                  : ""
+              }`}
+            >
+              {props.greyishText}
+            </p>
             {props.buttonIsHere && isButtonShow}
           </div>
         </Container>
       </div>
-      <ImageComp imgURL="/img/image.jpg"></ImageComp>
+      <ImageComp imgURL={props.imgURL}></ImageComp>
     </div>
   );
 };

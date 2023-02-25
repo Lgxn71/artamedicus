@@ -1,7 +1,12 @@
 // artamedicus.com/about-us
-
-function AboutUs() {
-  return <h1>About Us Page!</h1>;
-}
+import Layout from "@/components/Layout/Layout";
+import Main from "@/components/Main/Main";
+const AboutUs = () => {
+  return (
+    <Layout onSideBar={true}>
+      <Main></Main>
+    </Layout>
+  );
+};
 
 export default AboutUs;

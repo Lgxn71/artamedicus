@@ -8,12 +8,15 @@ const Main = () => {
   return (
     <main>
       <Hero
+        paragraphWidth="wide"
+        titleWidth="main"
         buttonIsHere={true}
         greyishText={`Мы улучшаем качество жизни людей, сохраняем молодость, красоту издоровье. Опираемся на многолетний опыт, эффективные технологии и
               профессионализм.`}
         textBeforeHighlight={`Добро пожаловать в `}
         highlighted={`Alta Medicus`}
         textAfterHighlight={``}
+        imgURL={"/img/image.jpg"}
       ></Hero>
       <Numbers></Numbers>
       <Specialists></Specialists>

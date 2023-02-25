@@ -26,12 +26,9 @@
 .nav-links .link {
   opacity: 0.4;
   transition: opacity 0.3s ease;
-}
-.nav-links .link:hover,
-.nav-links .link:active {
-  opacity: 1;
-}
-.nav-links li a {
   font-size: 0.875rem;
   color: var(--color-black-900);
+}
+
+.nav-links li a {
 }

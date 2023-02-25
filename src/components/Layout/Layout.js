@@ -3,7 +3,7 @@ import Footer from "./Footer/Footer";
 function Layout(props) {
   return (
     <div>
-      <Navbar></Navbar>
+      <Navbar onSideBar={props.onSideBar} highlight={props.highlight}></Navbar>
       {props.children}
       <Footer></Footer>
     </div>

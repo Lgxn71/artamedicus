@@ -1,45 +1,63 @@
+import { useState } from "react";
+
 import Link from "next/link";
 import ButtonPrimary from "../UI/Buttons/ButtonPrimary";
 import ContainerHeader from "../UI/Container/ContainerHeader";
 import styles from "./Navbar.module.css";
-const Navbar = () => {
+import SideBar from "./SideBar";
+const Navbar = (props) => {
+  const [isSideBarOpen, setIsSideBarOpen] = useState(props.onSideBar || false);
+  const aboutUsClickHandler = () => {
+    if (isSideBarOpen === false) {
+      setIsSideBarOpen(true);
+    } else {
+      setIsSideBarOpen(false);
+    }
+  };
   return (
-    <header className={styles["border-bottom"]}>
-      <ContainerHeader>
-        <section className={styles.header}>
-          <div className={styles.navbar}>
-            <div>
-              <div className={styles.logo}>Arta Medicus</div>
+    <div>
+      <header className={styles["border-bottom"]}>
+        <ContainerHeader>
+          <section className={styles.header}>
+            <div className={styles.navbar}>
+              <div>
+                <div className={styles.logo}>Arta Medicus</div>
+              </div>
+              <ul className={styles["nav-links"]}>
+                <li>
+                  <Link
+                    className={styles.link}
+                    onClick={aboutUsClickHandler}
+                    href="about-us/about-company"
+                  >
+                    О нас
+                  </Link>
+                </li>
+                <li>
+                  <Link className={styles.link} href="">
+                    Услуги
+                  </Link>
+                </li>
+                <li>
+                  <Link className={styles.link} href="">
+                    Отзывы
+                  </Link>
+                </li>
+                <li>
+                  <Link className={styles.link} href="">
+                    Контакты
+                  </Link>
+                </li>
+                <li>
+                  <ButtonPrimary inNavBar={true}>Заказать звонок</ButtonPrimary>
+                </li>
+              </ul>
             </div>
-            <ul className={styles["nav-links"]}>
-              <li>
-                <Link className={styles.link} href="">
-                  О нас
-                </Link>
-              </li>
-              <li>
-                <Link className={styles.link} href="">
-                  Услуги
-                </Link>
-              </li>
-              <li>
-                <Link className={styles.link} href="">
-                  Отзывы
-                </Link>
-              </li>
-              <li>
-                <Link className={styles.link} href="">
-                  Контакты
-                </Link>
-              </li>
-              <li>
-                <ButtonPrimary inNavBar={true}>Заказать звонок</ButtonPrimary>
-              </li>
-            </ul>
-          </div>
-        </section>
-      </ContainerHeader>
-    </header>
+          </section>
+        </ContainerHeader>
+      </header>
+      {isSideBarOpen && <SideBar highlight={props.highlight} />}
+    </div>
   );
 };
 export default Navbar;
