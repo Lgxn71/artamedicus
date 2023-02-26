@@ -17,6 +17,7 @@ const Main = () => {
         highlighted={`Alta Medicus`}
         textAfterHighlight={``}
         imgURL={"/img/image.jpg"}
+        isImageExist={true}
       ></Hero>
       <Numbers></Numbers>
       <Specialists></Specialists>

@@ -15,20 +15,22 @@ const Navbar = (props) => {
     }
   };
   return (
-    <div>
+    <div className={styles['navbar-fixed']}>
       <header className={styles["border-bottom"]}>
         <ContainerHeader>
           <section className={styles.header}>
             <div className={styles.navbar}>
               <div>
-                <div className={styles.logo}>Arta Medicus</div>
+                <Link href="/" className={styles.logo}>
+                  Arta Medicus
+                </Link>
               </div>
               <ul className={styles["nav-links"]}>
                 <li>
                   <Link
                     className={styles.link}
                     onClick={aboutUsClickHandler}
-                    href="about-us/about-company"
+                    href="/about-us/about-company"
                   >
                     О нас
                   </Link>
@@ -36,11 +38,6 @@ const Navbar = (props) => {
                 <li>
                   <Link className={styles.link} href="">
                     Услуги
-                  </Link>
-                </li>
-                <li>
-                  <Link className={styles.link} href="">
-                    Отзывы
                   </Link>
                 </li>
                 <li>

@@ -9,16 +9,16 @@
 .hero-title-aboutCompany {
   max-width: 936px;
 }
+.hero-title-culture {
+  max-width: 762px;
+}
+.hero-title-employees {
+  max-width: 762px;
+}
 /* Paragraphs width */
 .hero-paragraph-wide {
   max-width: 700px;
 }
-.hero-content-container {
-  max-width: 730px;
-}
-.hero-content-container-about-company {
-  max-width: 936px;
-}
-.paragraph-container {
-  max-width: 700px;
+.hero-paragraph-narrow {
+  max-width: 434px;
 }

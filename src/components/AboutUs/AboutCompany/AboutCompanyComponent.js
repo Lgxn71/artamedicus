@@ -13,6 +13,7 @@ const AboutCompany = () => {
         highlighted={`вашем здоровье`}
         textAfterHighlight={` в сердце столицы!`}
         imgURL={"/img/image.jpg"}
+        isImageExist={true}
       />
       <USP />
       <AboutTheTeam />

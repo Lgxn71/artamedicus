@@ -1,13 +1,12 @@
 // artamedicus.com/about-us/about-company
-// import Layout from "@/components/Layout/Layout";
-// import AboutCompany from "@/components/AboutUs/AboutCompany/AboutCompany";
-const Culture = () => {
+import Layout from "@/components/Layout/Layout";
+import Culture from "@/components/AboutUs/Culture/culture";
+const CulturePage = () => {
   return (
-    <h1>Culture</h1>
-    // <Layout>
-    //   <AboutCompany></AboutCompany>
-    // </Layout>
+    <Layout onSideBar={true} highlight="culture">
+      <Culture></Culture>
+    </Layout>
   );
 };
 
-export default Culture;
+export default CulturePage;

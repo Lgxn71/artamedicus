@@ -18,6 +18,9 @@
   line-height: 55px;
   margin-top: 5px;
 }
+.paragraph-wide {
+  max-width: 562px;
+}
 .paragraph {
   max-width: 470px;
   line-height: 30px;

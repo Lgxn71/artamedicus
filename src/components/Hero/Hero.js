@@ -11,10 +11,10 @@ const Hero = (props) => {
   );
 
   return (
-    <div>
+    <>
       <div className={styles["hero-container"]}>
         <Container>
-          <div>
+          <>
             <h1
               className={`text-gray 
               ${props.titleWidth === "main" ? styles["hero-title-main"] : ""}
@@ -22,7 +22,19 @@ const Hero = (props) => {
                 props.titleWidth === "aboutCompany"
                   ? styles["hero-title-aboutCompany"]
                   : ""
-              }`}
+              }
+              ${
+                props.titleWidth === "culture"
+                  ? styles["hero-title-culture"]
+                  : ""
+              }
+              ${
+                props.titleWidth === "employees"
+                  ? styles["hero-title-employees"]
+                  : ""
+              }
+              
+              `}
             >
               {props.textBeforeHighlight}
               <span className="highlight"> {props.highlighted}</span>
@@ -34,16 +46,21 @@ const Hero = (props) => {
                 props.paragraphWidth === "wide"
                   ? styles["hero-paragraph-wide"]
                   : ""
+              }
+              ${
+                props.paragraphWidth === "narrow"
+                  ? styles["hero-paragraph-narrow"]
+                  : ""
               }`}
             >
               {props.greyishText}
             </p>
             {props.buttonIsHere && isButtonShow}
-          </div>
+          </>
         </Container>
       </div>
-      <ImageComp imgURL={props.imgURL}></ImageComp>
-    </div>
+      {props.isImageExist && <ImageComp imgURL={props.imgURL}></ImageComp>}
+    </>
   );
 };
 export default Hero;

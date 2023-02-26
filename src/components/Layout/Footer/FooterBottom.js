@@ -17,16 +17,13 @@ const FooterBottom = () => {
           </div>
           <ul className={styles["footer-list"]}>
             <li>
-              <Link href="">О нас</Link>
+              <Link href="/about-us/about-company">О нас</Link>
             </li>
             <li>
               <Link href="">Услуги</Link>
             </li>
             <li>
-              <Link href="">Специалисты</Link>
-            </li>
-            <li>
-              <Link href="">Отзывы</Link>
+              <Link href="/about-us/employees">Специалисты</Link>
             </li>
             <li>
               <Link href="">Блог</Link>

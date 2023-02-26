@@ -10,7 +10,7 @@ const Testimonials = () => {
     <div className="background-color-dark-white ">
       <Container>
         <TitleEyebrow
-          readMoreExist={true}
+          readMoreExist={false}
           linkPath=""
           eyebrowText="Отзывы"
           titleText={`Что говорят наши пациенты`}

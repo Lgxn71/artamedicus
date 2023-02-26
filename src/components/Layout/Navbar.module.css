@@ -1,6 +1,13 @@
 .border-bottom {
   border-bottom: 1px solid var(--color-gray-400);
 }
+.navbar-fixed {
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: white;
+}
 .header {
   max-width: 1110px;
   width: 100%;
@@ -15,6 +22,7 @@
 .navbar .logo {
   font-size: 1.5rem;
   font-weight: 800;
+  color: #000000;
 }
 .nav-links {
   display: flex;
@@ -28,6 +36,10 @@
   transition: opacity 0.3s ease;
   font-size: 0.875rem;
   color: var(--color-black-900);
+}
+.link:hover,
+.link:active {
+  opacity: 1;
 }
 
 .nav-links li a {
