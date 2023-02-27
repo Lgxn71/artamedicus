@@ -1,7 +1,7 @@
 import Hero from "@/components/Hero/Hero";
 import PersonCard from "@/components/UI/PersonCard/PersonCard";
 import styles from "./Employees.module.css";
-import EmployeesData from "@/DataForComponents/about-company/employees/EmployeesData.json";
+import EmployeesData from "../../../DataForComponents/about-company/employees/EmployeesData.json";
 import ContainerWithoutSpace from "@/components/UI/Container/ContainerWithoutSpace";
 const Employees = (props) => {
   return (

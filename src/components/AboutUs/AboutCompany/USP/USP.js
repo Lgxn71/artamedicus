@@ -2,7 +2,7 @@ import TitleEyebrow from "@/components/TitleEyebrow/TitleEybrow";
 import Container from "@/components/UI/Container/Container";
 import styles from "./USP.module.css";
 import USPItem from "./USPItem";
-import DataItems from "@/DataForComponents/about-company/USPDataItems.json";
+import USPDataItems from "../../../../DataForComponents/about-company/USPDataItems.json";
 const USP = () => {
   return (
     <div className="background-color-dark-white">
@@ -14,7 +14,7 @@ const USP = () => {
         />
 
         <div className={styles["items-container"]}>
-          {DataItems.map((item) => {
+          {USPDataItems.map((item) => {
             return (
               <USPItem
                 key={item.id}
