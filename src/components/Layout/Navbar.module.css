@@ -1,12 +1,12 @@
-.border-bottom {
-  border-bottom: 1px solid var(--color-gray-400);
-}
 .navbar-fixed {
-  position: fixed; /* Set the navbar to fixed position */
+  position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
   background-color: white;
+}
+.border-bottom {
+  border-bottom: 1px solid var(--color-gray-400);
 }
 .header {
   max-width: 1110px;
@@ -19,7 +19,7 @@
   align-items: center;
   text-align: center;
 }
-.navbar .logo {
+.logo {
   font-size: 1.5rem;
   font-weight: 800;
   color: #000000;
@@ -31,7 +31,7 @@
 .nav-links li {
   margin: 0 1rem;
 }
-.nav-links .link {
+.link {
   opacity: 0.4;
   transition: opacity 0.3s ease;
   font-size: 0.875rem;
@@ -41,6 +41,8 @@
 .link:active {
   opacity: 1;
 }
-
-.nav-links li a {
+.active {
+  opacity: 1;
+  font-size: 0.875rem;
+  color: var(--color-black-900);
 }

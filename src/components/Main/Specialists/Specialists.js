@@ -10,8 +10,8 @@ const Specialists = () => {
   return (
     <Container>
       <TitleEyebrow
+        linkPath="/about-us/employees"
         readMoreExist={true}
-        linkPath=""
         eyebrowText="Наши cпециалисты"
         titleText={`Наши эксперты в области медицины помогут вам!`}
         paragraph={`Врачи Arta Medicus Clinic — эксперты в своих областях медицины и владеют всеми передовыми методиками. `}

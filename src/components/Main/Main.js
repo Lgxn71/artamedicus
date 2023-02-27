@@ -8,21 +8,21 @@ const Main = () => {
   return (
     <main>
       <Hero
+        spaceBottom="150"
         paragraphWidth="wide"
-        titleWidth="main"
-        buttonIsHere={true}
+        titleWidth="700"
+        isButtonExist={true}
         greyishText={`Мы улучшаем качество жизни людей, сохраняем молодость, красоту издоровье. Опираемся на многолетний опыт, эффективные технологии и
               профессионализм.`}
         textBeforeHighlight={`Добро пожаловать в `}
         highlighted={`Alta Medicus`}
-        textAfterHighlight={``}
         imgURL={"/img/image.jpg"}
         isImageExist={true}
       ></Hero>
-      <Numbers></Numbers>
-      <Specialists></Specialists>
-      <Testimonials></Testimonials>
-      <FAQ></FAQ>
+      <Numbers />
+      <Specialists />
+      <Testimonials />
+      <FAQ />
     </main>
   );
 };

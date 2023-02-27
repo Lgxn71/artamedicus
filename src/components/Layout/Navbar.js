@@ -15,7 +15,7 @@ const Navbar = (props) => {
     }
   };
   return (
-    <div className={styles['navbar-fixed']}>
+    <div className={styles["navbar-fixed"]}>
       <header className={styles["border-bottom"]}>
         <ContainerHeader>
           <section className={styles.header}>
@@ -28,7 +28,11 @@ const Navbar = (props) => {
               <ul className={styles["nav-links"]}>
                 <li>
                   <Link
-                    className={styles.link}
+                    className={
+                      props.activeNavbar === "aboutUs"
+                        ? styles.active
+                        : styles.link
+                    }
                     onClick={aboutUsClickHandler}
                     href="/about-us/about-company"
                   >
@@ -36,7 +40,14 @@ const Navbar = (props) => {
                   </Link>
                 </li>
                 <li>
-                  <Link className={styles.link} href="">
+                  <Link
+                    className={
+                      props.activeNavbar === "services"
+                        ? styles.active
+                        : styles.link
+                    }
+                    href="/services"
+                  >
                     Услуги
                   </Link>
                 </li>
@@ -53,7 +64,7 @@ const Navbar = (props) => {
           </section>
         </ContainerHeader>
       </header>
-      {isSideBarOpen && <SideBar highlight={props.highlight} />}
+      {isSideBarOpen && <SideBar highlightSideBar={props.highlightSideBar} />}
     </div>
   );
 };

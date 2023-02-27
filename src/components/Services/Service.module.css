@@ -1,5 +1,5 @@
 .item-container {
-  width: 825px;
+  width: 530px;
   padding-bottom: 30px;
   border-bottom: 1px solid rgba(91, 97, 110, 0.1);
   margin-bottom: 33.5px;
@@ -8,8 +8,8 @@
   position: relative;
   cursor: pointer;
   display: flex;
+  align-items: stretch;
   justify-content: space-between;
-  align-items: top;
 }
 .title {
   margin: 0;

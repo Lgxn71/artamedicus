@@ -2,6 +2,13 @@
   max-width: 1110px;
   width: 100%;
   margin: auto;
-  padding: 9.5rem 0;
-  
+}
+.container-150 {
+  padding: 150px 0;
+}
+.container-100 {
+  padding: 150px 0 100px 0;
+}
+.container-50 {
+  padding: 150px 0 100px 0;
 }

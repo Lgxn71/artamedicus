@@ -13,60 +13,39 @@ const FAQItems = (props) => {
         ${props.selectedSection === 1 ? "faq-box-block" : styles["faq-box"]}`}
         onClick={() => props.onSelectSection(1)}
       >
-        {FAQDataItemOne.map((element) => {
-          return (
-            <FAQItem
-              key={element.id}
-              title={element.title}
-              text={element.text}
-            />
-          );
-        })}
+        {FAQDataItemOne.map((element) => (
+          <FAQItem key={element.id} title={element.title} text={element.text} />
+        ))}
       </div>
+
       <div
         className={`
         ${props.selectedSection === 2 ? "faq-box-block" : styles["faq-box"]}`}
         onClick={() => props.onSelectSection(2)}
       >
-        {FAQDataItemTwo.map((element) => {
-          return (
-            <FAQItem
-              key={element.id}
-              title={element.title}
-              text={element.text}
-            />
-          );
-        })}
+        {FAQDataItemTwo.map((element) => (
+          <FAQItem key={element.id} title={element.title} text={element.text} />
+        ))}
       </div>
+
       <div
         className={`
         ${props.selectedSection === 3 ? "faq-box-block" : styles["faq-box"]}`}
         onClick={() => props.onSelectSection(3)}
       >
-        {FAQDataItemOne.map((element) => {
-          return (
-            <FAQItem
-              key={element.id}
-              title={element.title}
-              text={element.text}
-            />
-          );
-        })}
+        {FAQDataItemOne.map((element) => (
+          <FAQItem key={element.id} title={element.title} text={element.text} />
+        ))}
       </div>
+
       <div
         className={`
         ${props.selectedSection === 4 ? "faq-box-block" : styles["faq-box"]}`}
         onClick={() => props.onSelectSection(4)}
       >
-        {FAQDataItemTwo.map((element) => {
-          return (
-            <FAQItem
-              key={element.id}
-              title={element.title}
-              text={element.text}
-            />
-          );
-        })}
+        {FAQDataItemTwo.map((element) => (
+          <FAQItem key={element.id} title={element.title} text={element.text} />
+        ))}
       </div>
     </div>
   );

@@ -27,11 +27,13 @@ const FAQItem = (props) => {
           rotation={180}
         />
       </div>
-      <div
-        className={`${isOpen ? style["display-block"] : style["display-none"]}`}
+      <p
+        className={`text-gray 
+          ${isOpen ? style["display-block"] : style["display-none"]}
+          ${style.paragraph}`}
       >
-        <p className={`text-gray ${style.paragraph}`}>{props.text}</p>
-      </div>
+        {props.text}
+      </p>
     </div>
   );
 };

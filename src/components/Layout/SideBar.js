@@ -8,7 +8,7 @@ const SideBar = (props) => {
         <li>
           <Link
             className={`${styles.link} ${
-              props.highlight === "aboutCompany" ? styles.highlight : ""
+              props.highlightSideBar === "aboutCompany" ? styles.highlight : ""
             }`}
             href="/about-us/about-company"
           >
@@ -18,7 +18,7 @@ const SideBar = (props) => {
         <li>
           <Link
             className={`${styles.link} ${
-              props.highlight === "culture" ? styles.highlight : ""
+              props.highlightSideBar === "culture" ? styles.highlight : ""
             }`}
             href="/about-us/culture"
           >
@@ -28,7 +28,7 @@ const SideBar = (props) => {
         <li>
           <Link
             className={`${styles.link} ${
-              props.highlight === "employees" ? styles.highlight : ""
+              props.highlightSideBar === "employees" ? styles.highlight : ""
             }`}
             href="/about-us/employees"
           >
@@ -36,7 +36,12 @@ const SideBar = (props) => {
           </Link>
         </li>
         <li>
-          <Link className={styles.link} href="/about-us/hiring">
+          <Link
+            className={`${styles.link} ${
+              props.highlightSideBar === "hiring" ? styles.highlight : ""
+            }`}
+            href="/about-us/hiring"
+          >
             Трудоустройство
           </Link>
         </li>
